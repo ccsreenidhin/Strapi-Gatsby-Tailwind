@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "galleries",
+  "info": {
+    "name": "gallery",
+    "description": "SPNS Gallery"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "image1": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "image2": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "image3": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "image4": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "image5": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}
