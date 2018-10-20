@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "heroes",
+  "info": {
+    "name": "hero",
+    "description": "SPNS hero"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bg_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}
