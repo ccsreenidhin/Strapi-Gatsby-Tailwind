@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "services",
+  "info": {
+    "name": "services",
+    "description": "SPNS services"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "servicename": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

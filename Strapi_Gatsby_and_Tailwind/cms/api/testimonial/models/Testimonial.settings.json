@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "testimonials",
+  "info": {
+    "name": "testimonial",
+    "description": "SPENS Testimonials"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "client": {
+      "type": "string"
+    },
+    "testimonial": {
+      "type": "text"
+    }
+  }
+}
